@@ -1,0 +1,42 @@
+{
+    "name": "etha3a",
+    "version": "1.0.0",
+    "description": "API for broadcasting the Quran and supplications with automatic fallback between multiple sources and a unified data interface",
+    "main": "dist/server.js",
+    "type": "module",
+    "scripts": {
+        "dev": "tsx src/server.ts",
+        "build": "tsc",
+        "start": "node dist/server.js",
+        "lint": "eslint src --fix"
+    },
+    "keywords": [
+        "quran",
+        "azkar",
+        "radio",
+        "api",
+        "typescript",
+        "fastify"
+    ],
+    "author": "RlxChap2, kremdev",
+    "license": "MIT",
+    "packageManager": "pnpm@10.30.3",
+    "dependencies": {
+        "dotenv": "^17.3.1",
+        "fastify": "^5.7.4"
+    },
+    "devDependencies": {
+        "@eslint/js": "^10.0.1",
+        "@types/node": "^25.3.3",
+        "@typescript-eslint/eslint-plugin": "^8.56.1",
+        "@typescript-eslint/parser": "^8.56.1",
+        "eslint": ">=10",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-prettier": "^5.5.5",
+        "eslint-plugin-simple-header": "^1.2.2",
+        "prettier": "^3.8.1",
+        "tsx": "^4.21.0",
+        "typescript": "^5.9.3",
+        "typescript-eslint": "^8.56.1"
+    }
+}
