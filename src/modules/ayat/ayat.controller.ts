@@ -1,7 +1,11 @@
-/*
- * Etha3a – Quran & Azkar API
- * Copyright (c) 2026 RlxChap2 and kremdev
- * MIT License
+/*
+
+ * Etha3a – Quran & Azkar API
+
+ * Copyright (c) 2026 RlxChap2 and kremdev
+
+ * MIT License
+
  */
 
 import { FastifyReply, FastifyRequest } from 'fastify';
@@ -95,6 +99,7 @@ export async function getAyatBySurah(req: FastifyRequest<{ Params: { surah: stri
         },
     });
 }
+
 export async function getAyatByText(req: FastifyRequest<{ Querystring: { text: string } }>, reply: FastifyReply) {
     const text = req.query.text;
     if (!text) {
